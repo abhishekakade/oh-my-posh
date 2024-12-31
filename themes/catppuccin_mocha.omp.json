@@ -14,7 +14,8 @@
         {
           "foreground": "p:os",
           "style": "plain",
-          "template": "{{.Icon}} ",
+          // "template": "{{.Icon}} ",
+          "template": "\uF31b ",
           "type": "os"
         },
         {
@@ -51,15 +52,27 @@
           "template": "{{ .HEAD }} ",
           "style": "plain",
           "type": "git"
-        },
-        {
-          "style": "plain",
-          "foreground": "p:closer",
-          "template": "\uf105",
-          "type": "text"
         }
+        // ,
+        // {
+        //   "style": "plain",
+        //   "foreground": "p:closer",
+        //   "template": "\uf105",
+        //   "type": "text"
+        // }
       ],
       "type": "prompt"
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+          {
+            "type": "text",
+            "style": "plain",
+            "template": "\n\uf105"
+          }
+      ]
     }
   ],
   "final_space": true,
